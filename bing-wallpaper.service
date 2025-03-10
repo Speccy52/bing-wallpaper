@@ -1,0 +1,9 @@
+[Unit]
+Description=Update Bing wallpaper
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python %h/.local/bin/bing-wallpaper.py
+
+[Install]
+WantedBy=default.target
